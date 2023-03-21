@@ -82,7 +82,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="z-50  fixed min-w-full flex bg-[#000000] md:bg-transparent  px-4 lg:px-16 py-4 lg:py-10  items-center">
+    <nav className="z-50  fixed min-w-full flex bg-[#000000] md:bg-transparent md:backdrop-blur-[9px]  px-4 lg:px-16 py-4 lg:py-10  items-center">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="flex w-full ">
         <div className="w-3/12 md:w-2/12 flex items-center  ">
