@@ -18,7 +18,7 @@ function MobileNav({ open, setOpen }) {
   };
   return (
     <div
-      className={`  flex  dark:border-1 mt-28 absolute top-0 right-0 h-screen border-l border-[#FFFFFF26] w-64 bg-[#000000B3] backdrop-blur-[9px]  transform ${
+      className={`  flex  dark:border-1 mt-28 absolute top-0 right-0 h-screen border-l border-[#FFFFFF26] w-64 bg-[#000000B3]  backdrop-blur-[9px]  transform ${
         open ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >
@@ -89,7 +89,7 @@ export default function Navbar() {
           <div className={roboto.className}>
             <div className="flex flex-col justify-center items-center">
               <Image src={logo} className="w-[50px] md:w-[100px]"></Image>
-              <div className="text-2xl">GemGPT</div>
+              <div className="text-2xl text-white">GemGPT</div>
             </div>
           </div>
 

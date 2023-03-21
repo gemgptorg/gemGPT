@@ -11,7 +11,7 @@ export default function About({id}) {
     <div className=" px-20 flex flex-col text-xl  w-screen h-screen bg-gradient-to-r from-[#00172D] to-[#00264D]   ">
       <div className="w-full h-screen flex items-center justify-center ">
         <div className={roboto.className}>
-          <div className="p-8 text-5xl">Join The Journey</div>
+          <div className="p-8 text-5xl text-white">Join The Journey</div>
           <div id={id} className="text-3xl md:text-4xl lg:text-5xl p-12 md:p-24  rounded-lg text-[#00264D] bg-white  md:flex">
             <div className="text-3xl px-4 text-center flex flex-col ">
               <div> Active AI Processes per Second</div>

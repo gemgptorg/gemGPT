@@ -59,12 +59,12 @@ export default function FAQ({id}){
                 Everything about the GemGPT
               </p></div>
             </div>
-            <div className="flex flex-col items-center justify-center w-full" >
+            <div className="flex flex-col items-center justify-center w-full " >
               {qa.map((item, index) => {
                 const divStyle = classNames(
-                  "flex flex-col items-center justify-center w-full ",
+                  "flex flex-col items-center justify-center w-full bg-white ",
                   {
-                    "border rounded-xl border-solid border-white mb-2":
+                    "border rounded-xl border-solid border-[#BF40BF] mb-2":
                       index !== qa.length ,
                   }
                 );
@@ -72,9 +72,9 @@ export default function FAQ({id}){
                 return (
                   <div  key={index} className={divStyle}>
                     
-                    <div className="flex flex-row items-center justify-between w-full px-4 py-6">
+                    <div className="flex flex-row items-center justify-between w-full px-4 py-6 ">
                     <div  className={roboto.className}>
-                      <p id={id} className="text-xl text-white font-semibold">
+                      <p id={id} className="text-xl text-[#BF40BF] font-semibold">
                         {item.question}
                       </p>
                       </div>
@@ -82,14 +82,14 @@ export default function FAQ({id}){
                         <MinusCircle
                           className={classNames(
                             "h-5 w-5 mr-1 cursor-pointer",
-                            active === index ? "text-white" : "hidden"
+                            active === index ? "text-black" : "hidden"
                           )}
                           onClick={() => handleActive(index)}
                         ></MinusCircle>
                         <PlusCircle
                           className={classNames(
                             "h-5 w-5 mr-1 cursor-pointer",
-                            active === index ? "hidden" : "text-white"
+                            active === index ? "hidden" : "text-black"
                           )}
                           onClick={() => handleActive(index)}
                         ></PlusCircle>
@@ -102,7 +102,7 @@ export default function FAQ({id}){
                         active === index ? "block" : "hidden"
                       )}
                     > <div className={roboto.className}>
-                      <p className="text-base  text-white">
+                      <p className="text-base  text-black">
                         {item.answer}
                       </p>
                     </div></div>
