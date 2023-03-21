@@ -93,7 +93,7 @@ export default function Navbar() {
             </div>
           </div>
 
-         
+          
         </div>
         <div className="w-9/12 md:w-10/12 flex justify-end md:justify-start items-center pl-8 lg:pl-0">
           <div
