@@ -12,7 +12,7 @@ export default function Solution({ id }) {
       <div className="w-full h-screen flex items-center justify-center md:p-8 md:gap-3 pb-32">
         <div id={id} className={roboto.className}>
           <div className="text-2xl md:text-4xl lg:text-5xl text-white ">
-            Problems and our solution
+            Problems and our Solution
           </div>
           <div className="text-base md:text-xl lg:text-2xl text-white pt-8 ">
             The cryptocurrency market is highly volatile, and making accurate
