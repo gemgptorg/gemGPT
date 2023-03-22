@@ -43,7 +43,7 @@ function MobileNav({ open, setOpen }) {
               className="text-xl font-normal cursor-pointer"
               onClick={() => goToSection("#home")}
             >
-              <div className="pb-2 px-6 py-2">Whitepaper</div>
+              <div className="pb-2 px-6 py-2">Statistics</div>
             </span>
           <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
           <span
@@ -82,13 +82,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="z-50  fixed min-w-full flex bg-[#000000] md:bg-transparent md:backdrop-blur-[9px]  px-4 lg:px-16 py-4 lg:py-10  items-center">
+    <nav className="z-50  fixed min-w-full flex bg-[#000000] md:bg-[#00172DB3]  md:backdrop-blur-[9px]  px-4 lg:px-16 py-4 lg:py-4 items-center">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="flex w-full ">
         <div className="w-3/12 md:w-2/12 flex items-center  ">
           <div className={roboto.className}>
             <div className="flex flex-col justify-center items-center">
-              <Image src={logo} className="w-[50px] md:w-[100px]"></Image>
+              <Image src={logo} className="w-[50px] md:w-[80px]"></Image>
               <div className="text-2xl text-white">GemGPT</div>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function Navbar() {
                   onClick={() => goToSection("#statistics")}
                   className="cursor-pointer tracking-wide text-lg lg:text-2xl block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Whitepaper
+                  Statistics
                 </span>
 
                 <span
