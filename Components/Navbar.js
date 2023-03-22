@@ -26,35 +26,46 @@ function MobileNav({ open, setOpen }) {
         <div className=" flex flex-col  items-center text-white  py-4">
           <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
           <span
-              className="text-xl font-normal cursor-pointer"
-              onClick={() => goToSection("#home")}
-            >
-              <div className="pb-2 px-6 py-2">Home</div>
-            </span>
+            className="text-xl font-normal cursor-pointer"
+            onClick={() => goToSection("#home")}
+          >
+            <div className="pb-2 px-6 py-2">Home</div>
+          </span>
           <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
           <span
-              className="text-xl font-normal cursor-pointer"
-              onClick={() => goToSection("#home")}
-            >
-              <div className="pb-2 px-6 py-2">About</div>
-            </span>
+            className="text-xl font-normal cursor-pointer"
+            onClick={() => goToSection("#home")}
+          >
+            <div className="pb-2 px-6 py-2">About</div>
+          </span>
           <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
           <span
-              className="text-xl font-normal cursor-pointer"
-              onClick={() => goToSection("#home")}
-            >
-              <div className="pb-2 px-6 py-2">Statistics</div>
-            </span>
+            className="text-xl font-normal cursor-pointer"
+            onClick={() => goToSection("#home")}
+          >
+            <div className="pb-2 px-6 py-2">Statistics</div>
+          </span>
           <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
           <span
-              className="text-xl font-normal cursor-pointer"
-              onClick={() => goToSection("#home")}
-            >
-              <div className=" px-6 py-2">FAQ</div>
-            </span>
-           
+            className="text-xl font-normal cursor-pointer"
+            onClick={() => goToSection("#home")}
+          >
+            <div className=" px-6 py-2">FAQ</div>
+          </span>
+          <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
 
-          
+          <span>
+            <div className="pt-8">
+          <div className={roboto.className}>
+            <Link href="/coomingsoon">
+              
+                <Image src={robot} className="w-[100px] h-[80px]"></Image>
+                <div className=" mr-4 text-white">RUN APP</div>
+             
+            </Link>
+          </div>
+          </div>
+        </span>
           <span
             className="text-xl font-normal  "
             onClick={() =>
@@ -63,7 +74,7 @@ function MobileNav({ open, setOpen }) {
               }, 100)
             }
           ></span>
-          <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
+         
         </div>
       </div>
     </div>
@@ -87,13 +98,12 @@ export default function Navbar() {
       <div className="flex w-full ">
         <div className="w-3/12 md:w-2/12 flex items-center  ">
           <div className={roboto.className}>
+            <Link href="/">
             <div className="flex flex-col justify-center items-center">
               <Image src={logo} className="w-[50px] md:w-[80px]"></Image>
               <div className="text-2xl text-white">GemGPT</div>
-            </div>
+            </div></Link>
           </div>
-
-          
         </div>
         <div className="w-9/12 md:w-10/12 flex justify-end md:justify-start items-center pl-8 lg:pl-0">
           <div
@@ -154,8 +164,12 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex flex-col justify-center items-center">
           <div className={roboto.className}>
-            <Image src={robot} className="w-[100px] h-[80px]"></Image>
-            <div className="ml-3 mt-2 text-white">RUN APP</div>
+            <Link href="/coomingsoon">
+              
+                <Image src={robot} className="w-[100px] h-[80px]"></Image>
+                <div className="ml-3 mt-2 text-white">RUN APP</div>
+             
+            </Link>
           </div>
         </div>
       </div>

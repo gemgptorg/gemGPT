@@ -5,15 +5,16 @@ const roboto = Roboto_Mono({ weight: "400", subsets: ["latin"] });
 
 import logo from "../public/assets/i/logo.png";
 
-const goToSection = (id) => {
+
+
+export default function Footer() {
+  const goToSection = (id) => {
     document.getElementById(id).scrollIntoView({
       behavior: "smooth",
       block: "center",
       inline: "center",
     });
   };
-
-export default function Footer() {
   return (
     <>
       <div className="hidden w-screen  bg-[#071330] border-t-[1px] border-solid border-[#4b4949] lg:flex flex-col px-[5%] py-[2%] items-center justify-between ">
@@ -29,7 +30,7 @@ export default function Footer() {
             </div>
             <div className="w-full md:w-2/12 flex items-center  ">
           <div className={roboto.className}>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center cursor-pointer" onClick={() => goToSection("#home")}>
               <Image src={logo} className="w-[50px] md:w-[80px]"></Image>
               <div className="text-2xl text-white">GemGPT</div>
             </div>
@@ -42,9 +43,9 @@ export default function Footer() {
                 <div className={roboto.className}>
                   <div className="text-white text-lg " >Sitemap</div>
                   <div className="text-white text-base cursor-pointer "onClick={() => goToSection("#home")}>Home</div>
-                  <div className="text-white text-base "  onClick={() => goToSection("#about")}>About</div>
-                  <div className="text-white text-base "onClick={() => goToSection("#statistics")}>Statistics</div>
-                  <div className="text-white text-base "onClick={() => goToSection("#faq")}>FAQ</div>
+                  <div className="text-white text-base cursor-pointer"  onClick={() => goToSection("#about")}>About</div>
+                  <div className="text-white text-base cursor-pointer"onClick={() => goToSection("#statistics")}>Statistics</div>
+                  <div className="text-white text-base cursor-pointer"onClick={() => goToSection("#faq")}>FAQ</div>
 
                 </div>
               </div>
