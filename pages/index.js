@@ -7,6 +7,7 @@ import Hero from "@/Containers/Hero";
 import About from "@/Containers/About";
 import Statistics from "@/Containers/Statistics"
 import FAQ from "@/Containers/FAQ";
+import Solution from "@/Containers/Solution";
 
 
 const play = Play({ weight: "700", subsets: ["latin"] });
@@ -23,6 +24,7 @@ export default function Home() {
       <main className={styles.main}>
       <Hero id="#home"></Hero>
       <About id="#about"></About>
+      <Solution></Solution>
       <Statistics id="#statistics"></Statistics>
       <FAQ id="#faq"></FAQ>
       </main>
