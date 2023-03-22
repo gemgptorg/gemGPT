@@ -14,7 +14,6 @@ export default function About({id}){
           <div id={id} className={roboto.className}>
             <div
               className="text-2xl md:text-4xl lg:text-5xl text-white "
-              
             >
               Explore the potential of AI and Crypto
             </div>

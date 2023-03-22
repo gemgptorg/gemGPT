@@ -28,7 +28,7 @@ export default function Hero({ id }) {
             <SocialIcon
               network="telegram"
               fgColor="white"
-              style={{ minheight: 50, minWidth: 50, marginRight:"auto" , marginLeft:"auto" }}
+              style={{ minheight: 50, minWidth: 50, marginRight:"auto" , marginLeft:"auto" }} url="https://t.me/gemgpt"
             />
             <SocialIcon
               network="twitter"
@@ -37,19 +37,23 @@ export default function Hero({ id }) {
               url="https://twitter.com/gemgptlabs"
             />
             <SocialIcon
-              network="reddit"
+              network="medium"
               fgColor="white"
               style={{ minHeight: 50, minWidth: 50, marginRight:"auto" , marginLeft:"auto" }}
+              url="https://medium.com/@GemGPT"
+             
             />
             <SocialIcon
-              network="discord"
+              network="tiktok"
               fgColor="white"
               style={{ minHeight: 50, minWidth: 50, marginRight:"auto" , marginLeft:"auto" }}
+              url="https://www.tiktok.com/@gemgpt?is_from_webapp=1&sender_device=pc"
             />
             <SocialIcon
               network="youtube"
               fgColor="white"
               style={{ minHeight: 50, minWidth: 50 , marginRight:"auto" , marginLeft:"auto"}}
+              url="https://www.youtube.com/@GemGPT"
             />
             <Image
               width={50}
