@@ -7,7 +7,7 @@ const roboto = Roboto_Mono({ weight: "400", subsets: ["latin"] });
 
 export default function Hero({ id }) {
   return (
-    <div className="pt-60 sm:pt-96 md:py-80 px-20 flex flex-col text-xl justify-center  items-center w-screen h-screen  bg-cover bg-center ">
+    <div className="pt-32 sm:pt-48 md:py-80 px-20 flex flex-col text-xl justify-center  items-center w-screen h-screen  bg-cover bg-center ">
       <div className="w-full h-full flex justify-center  items-center">
         <div id={id} className={roboto.className}>
           <video
