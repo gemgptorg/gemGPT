@@ -16,7 +16,7 @@ export default function About({id}){
               className="text-2xl md:text-4xl lg:text-5xl text-white "
               
             >
-              Explore the potantial of AI and Crypto
+              Explore the potential of AI and Crypto
             </div>
             <div
               className="text-lg md:text-xl lg:text-2xl text-white pt-8 "
