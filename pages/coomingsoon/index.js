@@ -9,7 +9,7 @@ const roboto = Roboto_Mono({ weight: "400", subsets: ["latin"] });
 
 export default function Cooming({ id }) {
   return (
-    <div className="pt-80 sm:pt-96 md:py-80 px-20 flex flex-col text-xl  justify-start  items-start w-screen h-screen bg-hero  bg-cover bg-center ">
+    <div className="pt-32 sm:pt-64 md:py-80 px-20 flex flex-col text-xl  justify-start  items-start w-screen h-screen bg-hero  bg-cover bg-center ">
       <div className="w-full h-full  ">
         <div id={id} className={roboto.className}>
           <div className="text-3xl md:text-4xl lg:text-5xl text-white text-center ">
