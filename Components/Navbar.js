@@ -18,7 +18,7 @@ function MobileNav({ open, setOpen }) {
   };
   return (
     <div
-      className={`  flex  dark:border-1 mt-28 absolute top-0 right-0 h-screen border-l border-[#FFFFFF26] w-64 bg-[#000000B3]  backdrop-blur-[9px]  transform ${
+      className={`  flex  dark:border-1 mt-28 absolute top-0 right-0 h-screen border-l border-[#FFFFFF26] w-64 bg-[#000000B3]  backdrop-blur-[4px]  transform ${
         open ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >
@@ -103,7 +103,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="z-50  fixed min-w-full flex bg-[#000000] md:bg-[#00172DB3]  md:backdrop-blur-[9px]  px-4 lg:px-16 py-4 lg:py-4 items-center">
+    <nav className="z-50  fixed min-w-full flex bg-[#000000] md:bg-[#00172DB3]  md:backdrop-blur-2px]  px-4 lg:px-16 py-4 lg:py-4 items-center">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="flex w-full ">
         <div className="w-3/12 md:w-2/12 flex items-center  ">
